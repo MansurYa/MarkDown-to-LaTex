@@ -1,0 +1,119 @@
+\documentclass[a4paper,14pt]{extarticle}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{babel}
+\usepackage{geometry}
+\geometry{top=2cm,bottom=2cm,left=3cm,right=1.5cm}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{makecell} % Добавить в преамбулу
+\usepackage{array} % Добавьте в преамбулу
+\usepackage{caption} % Пакет для настройки подписей
+
+% Настройки для таблиц: подпись справа
+\captionsetup[table]{
+    justification=raggedleft, % Выровнять подпись по правому краю
+    singlelinecheck=false,    % Отключить центрирование коротких подписей
+    font=small,               % Уменьшенный шрифт для подписи
+    width=.95\textwidth       % Ширина подписи 95\% от ширины текста
+}
+
+% Настройки для изображений: подпись по центру
+\captionsetup[figure]{
+    justification=centering,  % Выровнять подпись по центру
+    singlelinecheck=true,     % Центрирование однострочных подписей
+    font=small,               % Уменьшенный шрифт для подписи
+    width=.95\textwidth       % Ширина подписи 95\% от ширины текста
+}
+
+\usepackage{amsmath}
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
+
+% Настройка заголовка для оглавления
+\renewcommand{\contentsname}{Оглавление}
+
+% Уменьшение межстрочного интервала
+\linespread{1.3}
+
+% Начало новой главы с новой страницы
+\newcommand{\newsection}{\newpage\section}
+
+% Настройка отступов в оглавлении
+\setlength{\cftbeforesecskip}{0.5cm}
+
+% Цвета для листинга кода
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+    frame=tb,
+    language=Python,
+    aboveskip=3mm,
+    belowskip=3mm,
+    breaklines=true,
+    breakatwhitespace=true,
+    showstringspaces=false,
+    columns=flexible,
+    basicstyle={\small\ttfamily},
+    numbers=none,
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color{blue},
+    commentstyle=\color{dkgreen},
+    stringstyle=\color{mauve},
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=3,
+    inputencoding=utf8/latin1,
+    extendedchars=true,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}
+}
+
+
+
+
+% Настройка титульной страницы
+\newcommand{\filltitle}{%
+    \begin{titlepage}
+        \centering
+        {\normalsize\textbf{organization_name}}\\
+        [5mm]
+        {\normalsize organization_section_name}\\
+        \vfill
+        \textbf{\normalsize type_of_work_name}\\
+        [5mm]
+        \textbf{\large work_name}\\
+        \vfill
+        \hfill
+        \begin{minipage}{0.5\textwidth}
+            \begin{flushleft}
+                Выполнили:\\
+                persons_who_completed_the_work_full_name
+                \vspace{5mm}
+                team_name\\
+                \vspace{5mm}
+                Руководитель:\\
+                bosses_full_name
+            \end{flushleft}
+        \end{minipage}
+        \vfill
+        city_name\\
+        year_str
+    \end{titlepage}
+}
+
+\begin{document}
+
+\sloppy
+\filltitle
+\tableofcontents
+\newpage % Переход на новую страницу после оглавления
+
