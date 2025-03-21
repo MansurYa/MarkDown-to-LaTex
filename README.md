@@ -1,6 +1,6 @@
 **Автоматическое преобразование Markdown в LaTeX с использованием GPT-4o-mini**
 
-[defd]
+![Демонстрационная картинка](https://github.com/MansurYa/MarkDown-to-LaTex/blob/main/demonstration_image.png)
 
 ---
 
@@ -107,6 +107,6 @@ latex_output = MarkDown_to_LaTex(
 \end{table}
 ```
 
-Для демонстрации работы конвертера ознакомьтесь с файлом [example_of_conversion_to_LaTeX.pdf](example_of_conversion_to_LaTeX.pdf) - это скомпилированный PDF-документ, полученный из LaTeX-кода, который был сгенерирован скриптом `example_MarkDown_to_LaTex.py`.
+Для демонстрации работы конвертера ознакомьтесь с файлом [example_of_conversion_to_LaTeX.pdf](https://github.com/MansurYa/MarkDown-to-LaTex/blob/main/example_of_conversion_to_LaTex.pdf) - это скомпилированный PDF-документ, полученный из LaTeX-кода, который был сгенерирован скриптом `example_MarkDown_to_LaTex.py`.
 
 🔗 Основано на проекте [Chat GPT with chain of reasoning](https://github.com/MansurYa/chat_GPT_with_chain_of_reasoning.git)
