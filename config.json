@@ -1,7 +1,6 @@
 {
     "api_key": "",
     "organization": "",
-    "model_name": "gpt-4o-mini",
     "max_symbols_block_size_for_conversation_MarkDown_to_LaTex": 20000,
     "model_name_for_conversion": "gpt-4o-mini"
 }
